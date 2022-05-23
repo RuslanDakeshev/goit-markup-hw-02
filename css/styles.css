@@ -17,7 +17,6 @@
 
 body{
     font-family: 'Roboto',sans-serif;
-    font-style: normal;
     font-weight: 500;
     
 
@@ -27,7 +26,7 @@ body{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1,2
+    line-height: 1.2;
    letter-spacing: 0.03em;
    color: #000;
 }
@@ -41,7 +40,7 @@ body{
     
     
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     
     color: var(--accent-color-black);
@@ -56,7 +55,7 @@ body{
     
     
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     
     color:var(--accent-color-gray);
@@ -66,7 +65,7 @@ body{
     
     
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     
     color:var(--accent-color-gray);
@@ -84,13 +83,18 @@ body{
 
 /*hero*/
 
+.hero{
+    text-transform: uppercase;
+    background-color: #2F303A;
+}
+
 .hero-text{
     
    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    /*color: #FFFFFF;*/
+    color: #FFFFFF;
 }
 
 .modal-btn{
@@ -98,9 +102,10 @@ body{
    
     font-weight: 700;
     font-size: 16px;
-    line-height: 1,875;
+    line-height: 1.875;
     cursor: pointer;
-    /*color: #FFFFFF;*/
+    color: #FFFFFF;
+    background: var(--accent-color);
 }
 .modal-btn:hover,
 .modal-btn:focus{
@@ -115,7 +120,7 @@ body{
     
     font-weight: 700;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     
@@ -127,8 +132,7 @@ body{
     
     font-weight: 400;
     font-size: 14px;
-    line-height: 1,71;
-    /* or 171% */
+    line-height: 1.71;
     letter-spacing: 0.03em;
     
     color:var(--accent-color-gray);
@@ -141,7 +145,7 @@ body{
     
     font-weight: 700;
     font-size: 36px;
-    line-height: 1,66;
+    line-height: 1.66;
     text-align: center;
     letter-spacing: 0.03em;
     
@@ -150,15 +154,24 @@ body{
 
 /*our-team*/
 
+.our-team-section{
+    background: #F5F4FA;
+}
+
+.our-team-element{
+    background: #FFFFFF;
+}
+
 .our-team{
     
     
     font-weight: 700;
     font-size: 36px;
-    line-height: 1,16;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--accent-color-black);
+    
 }
 
 .our-team-worker{
@@ -166,7 +179,7 @@ body{
     
     
     font-size: 16px;
-    line-height: 1,18;
+    line-height: 1.18;
     letter-spacing: 0.03em;
     
     color: var(--accent-color-black);
@@ -177,28 +190,43 @@ body{
     
     font-weight: 400;
     font-size: 16px;
-    line-height: 1,18;
+    line-height: 1.18;
     letter-spacing: 0.03em;
     
     color:var(--accent-color-gray);
 }
 
 /*futter*/
+footer{
+    background-color: #2F303A;
+}
+.web-footer{
+    color: var(--accent-color);
+}
 
+.studio{
+    color: #FFFFFF;
+}
+
+.adres{
+    font-style: normal;
+
+
+}
 .nav-link{
     
     
     font-weight: 400;
     font-size: 14px;
-    line-height: 1,71
+    line-height: 1.71;
     letter-spacing: 0.03em;
     
-    /*color: #FFFFFF;*/
+    color: #FFFFFF;
 }
 
 .nav-link:hover,
 .nav-link:focus{
-   color: rgba(255, 255, 255, 0.6);;
+   color: var(--accent-color)
 }
 
 .mail-link {
@@ -206,17 +234,16 @@ body{
     
     font-weight: 400;
     font-size: 14px;
-    line-height: 1, 71
-        /* or 171% */
-        letter-spacing: 0.03em;
+    line-height: 1.71;
+       
+    letter-spacing: 0.03em;
 
-    /*color: #FFFFFF;*/
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .mail-link:hover,
 .mail-link:focus {
-    color: rgba(255, 255, 255, 0.6);
-    ;
+    color:var(--accent-color)
 }
 
 .tel-link {
@@ -224,17 +251,16 @@ body{
     
     font-weight: 400;
     font-size: 14px;
-    line-height: 1, 71
-        /* or 171% */
-        letter-spacing: 0.03em;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 
-    /*color: #FFFFFF;*/
+    color: rgba(255, 255, 255, 0.6);
+    ;
 }
 
 .tel-link:hover,
 .tel-link:focus {
-    color: rgba(255, 255, 255, 0.6);
-    ;
+    color: var(--accent-color)
 }
 
 /*----------portfolio---------*/
@@ -243,18 +269,25 @@ body{
 
 .buttons{
     
-    font-weight: 500;
     font-size: 16px;
-    line-height: 1,62
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     
-    /*color: #FFFFFF;*/
+    *color: #FFFFFF;
+    
+    
+}
+
+.button-portfolio{
+    background: #F5F4FA;
 }
 
 .button-portfolio:hover,
 .button-portfolio:focus{
-    background: #2196F3;
+    color: #FFFFFF;
+    background: var(--accent-color);
+    cursor: pointer;
 }
 
 /*---projects---*/
@@ -264,10 +297,9 @@ body{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    /* identical to box height, or 200% */
     letter-spacing: 0.06em;
     
-    color: #212121;
+    color:var(--accent-color-black);
 
 }
 
@@ -275,9 +307,8 @@ body{
     
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
-    /* identical to box height, or 188% */
+    line-height: 1.87;
     letter-spacing: 0.03em;
     
-    color: #757575;
+    color: var(--accent-color-gray);
 }
